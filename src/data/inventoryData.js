@@ -1,0 +1,527 @@
+import audiQ7 from "../assets/cars/audi-q7.jpg";
+import audiSportback from "../assets/cars/audi-a5-sportback.jpg";
+import bmw530i from "../assets/cars/bmw-5-series.jpg";
+import fordEscape from "../assets/cars/ford-escape.jpg";
+import mercedesCla from "../assets/cars/mercedes-cla.jpg";
+import peugeot308 from "../assets/cars/peugeot-308.jpg";
+import porscheCayenne from "../assets/cars/porsche-cayenne.jpg";
+
+export const inventoryConditionOptions = [
+  "Used Cars",
+  "New Cars",
+  "All Cars",
+];
+
+export const inventoryFilterOptions = {
+  make: [
+    "Any Makes",
+    "Audi",
+    "BMW",
+    "Ford",
+    "Mercedes-Benz",
+    "Peugeot",
+    "Porsche",
+  ],
+  category: ["All Body Types", "SUV", "Sedan", "Hatchback", "Coupe"],
+  fuel: ["Any Fuel", "Petrol", "Hybrid", "Diesel", "Electric"],
+  priceRange: ["Any Price", "Under $30k", "$30k - $50k", "$50k+"],
+};
+
+export const inventorySortOptions = [
+  "Best Match",
+  "Lowest Price",
+  "Highest Price",
+  "Newest First",
+];
+
+export const inventoryListings = [
+  {
+    id: "inv-audi-q7-prestige",
+    brand: "Audi",
+    model: "Q7 Prestige",
+    category: "SUV",
+    condition: "Used Cars",
+    price: 68950,
+    monthlyPrice: "$799/mo",
+    year: 2024,
+    mileage: "12 mi",
+    fuel: "Hybrid",
+    transmission: "Automatic AWD",
+    seats: 7,
+    badge: "Low Mileage",
+    image: audiQ7,
+    trim: "55 TFSI quattro premium plus",
+    inStock: true,
+  },
+  {
+    id: "inv-audi-a5-s-line",
+    brand: "Audi",
+    model: "A5 Sportback",
+    category: "Coupe",
+    condition: "Used Cars",
+    price: 41750,
+    monthlyPrice: "$459/mo",
+    year: 2022,
+    mileage: "22k mi",
+    fuel: "Petrol",
+    transmission: "Automatic quattro",
+    seats: 5,
+    badge: "Great Price",
+    image: audiSportback,
+    trim: "S line night package",
+    inStock: true,
+  },
+  {
+    id: "inv-bmw-530i-m-sport",
+    brand: "BMW",
+    model: "530i",
+    category: "Sedan",
+    condition: "Used Cars",
+    price: 32900,
+    monthlyPrice: "$399/mo",
+    year: 2021,
+    mileage: "28k mi",
+    fuel: "Petrol",
+    transmission: "Automatic RWD",
+    seats: 5,
+    badge: "Popular",
+    image: bmw530i,
+    trim: "M Sport executive package",
+    inStock: true,
+  },
+  {
+    id: "inv-bmw-530e",
+    brand: "BMW",
+    model: "530e",
+    category: "Sedan",
+    condition: "New Cars",
+    price: 53500,
+    monthlyPrice: "$619/mo",
+    year: 2024,
+    mileage: "7 mi",
+    fuel: "Hybrid",
+    transmission: "Automatic RWD",
+    seats: 5,
+    badge: "New Arrival",
+    image: bmw530i,
+    trim: "Plug-in hybrid luxury line",
+    inStock: true,
+  },
+  {
+    id: "inv-ford-escape-titanium",
+    brand: "Ford",
+    model: "Escape Titanium",
+    category: "SUV",
+    condition: "Used Cars",
+    price: 27850,
+    monthlyPrice: "$339/mo",
+    year: 2022,
+    mileage: "16k mi",
+    fuel: "Hybrid",
+    transmission: "Automatic FWD",
+    seats: 5,
+    badge: "Family Pick",
+    image: fordEscape,
+    trim: "Titanium hybrid comfort pack",
+    inStock: true,
+  },
+  {
+    id: "inv-ford-kuga-st-line",
+    brand: "Ford",
+    model: "Kuga ST-Line",
+    category: "SUV",
+    condition: "New Cars",
+    price: 31600,
+    monthlyPrice: "$379/mo",
+    year: 2024,
+    mileage: "9 mi",
+    fuel: "Petrol",
+    transmission: "Automatic AWD",
+    seats: 5,
+    badge: "Dealer Offer",
+    image: fordEscape,
+    trim: "ST-Line with driver assist pack",
+    inStock: false,
+  },
+  {
+    id: "inv-mercedes-cla-250",
+    brand: "Mercedes-Benz",
+    model: "CLA 250",
+    category: "Coupe",
+    condition: "New Cars",
+    price: 47200,
+    monthlyPrice: "$499/mo",
+    year: 2024,
+    mileage: "8 mi",
+    fuel: "Petrol",
+    transmission: "Automatic FWD",
+    seats: 5,
+    badge: "Premium Trim",
+    image: mercedesCla,
+    trim: "AMG line with night package",
+    inStock: true,
+  },
+  {
+    id: "inv-mercedes-glc-300",
+    brand: "Mercedes-Benz",
+    model: "GLC 300",
+    category: "SUV",
+    condition: "Used Cars",
+    price: 51900,
+    monthlyPrice: "$579/mo",
+    year: 2022,
+    mileage: "18k mi",
+    fuel: "Petrol",
+    transmission: "Automatic AWD",
+    seats: 5,
+    badge: "Low Mileage",
+    image: mercedesCla,
+    trim: "4MATIC premium package",
+    inStock: true,
+  },
+  {
+    id: "inv-peugeot-308-gt",
+    brand: "Peugeot",
+    model: "308 GT",
+    category: "Hatchback",
+    condition: "Used Cars",
+    price: 24900,
+    monthlyPrice: "$299/mo",
+    year: 2021,
+    mileage: "34k mi",
+    fuel: "Petrol",
+    transmission: "Automatic FWD",
+    seats: 5,
+    badge: "Great Price",
+    image: peugeot308,
+    trim: "GT hatchback with tech pack",
+    inStock: false,
+  },
+  {
+    id: "inv-peugeot-408-allure",
+    brand: "Peugeot",
+    model: "408 Allure",
+    category: "Coupe",
+    condition: "New Cars",
+    price: 35400,
+    monthlyPrice: "$429/mo",
+    year: 2024,
+    mileage: "5 mi",
+    fuel: "Hybrid",
+    transmission: "Automatic FWD",
+    seats: 5,
+    badge: "New Arrival",
+    image: peugeot308,
+    trim: "Fastback hybrid with panoramic roof",
+    inStock: true,
+  },
+  {
+    id: "inv-peugeot-3008-gt",
+    brand: "Peugeot",
+    model: "3008 GT",
+    category: "SUV",
+    condition: "Used Cars",
+    price: 28900,
+    monthlyPrice: "$349/mo",
+    year: 2022,
+    mileage: "27k mi",
+    fuel: "Diesel",
+    transmission: "Automatic FWD",
+    seats: 5,
+    badge: "Popular",
+    image: peugeot308,
+    trim: "GT line crossover with comfort pack",
+    inStock: true,
+  },
+  {
+    id: "inv-porsche-cayenne",
+    brand: "Porsche",
+    model: "Cayenne",
+    category: "SUV",
+    condition: "Used Cars",
+    price: 56100,
+    monthlyPrice: "$679/mo",
+    year: 2021,
+    mileage: "19k mi",
+    fuel: "Petrol",
+    transmission: "Automatic AWD",
+    seats: 5,
+    badge: "Performance",
+    image: porscheCayenne,
+    trim: "Sport chrono package included",
+    inStock: true,
+  },
+  {
+    id: "inv-porsche-macan-s-used",
+    brand: "Porsche",
+    model: "Macan S",
+    category: "SUV",
+    condition: "Used Cars",
+    price: 53800,
+    monthlyPrice: "$629/mo",
+    year: 2022,
+    mileage: "14k mi",
+    fuel: "Petrol",
+    transmission: "Automatic AWD",
+    seats: 5,
+    badge: "Hot Offer",
+    image: porscheCayenne,
+    trim: "Sport design package with BOSE audio",
+    inStock: true,
+  },
+  {
+    id: "inv-porsche-macan-4",
+    brand: "Porsche",
+    model: "Macan 4",
+    category: "SUV",
+    condition: "New Cars",
+    price: 69400,
+    monthlyPrice: "$799/mo",
+    year: 2024,
+    mileage: "3 mi",
+    fuel: "Electric",
+    transmission: "Automatic AWD",
+    seats: 5,
+    badge: "Electric",
+    image: porscheCayenne,
+    trim: "All-electric performance SUV",
+    inStock: true,
+  },
+  {
+    id: "inv-audi-q5-sport",
+    brand: "Audi",
+    model: "Q5 Sport",
+    category: "SUV",
+    condition: "Used Cars",
+    price: 38400,
+    monthlyPrice: "$449/mo",
+    year: 2022,
+    mileage: "21k mi",
+    fuel: "Diesel",
+    transmission: "Automatic quattro",
+    seats: 5,
+    badge: "Best Seller",
+    image: audiQ7,
+    trim: "Black edition with virtual cockpit",
+    inStock: true,
+  },
+  {
+    id: "inv-bmw-x5-xdrive",
+    brand: "BMW",
+    model: "X5 xDrive40i",
+    category: "SUV",
+    condition: "Used Cars",
+    price: 58700,
+    monthlyPrice: "$689/mo",
+    year: 2022,
+    mileage: "17k mi",
+    fuel: "Petrol",
+    transmission: "Automatic AWD",
+    seats: 5,
+    badge: "Hot Offer",
+    image: bmw530i,
+    trim: "M Sport package with glass controls",
+    inStock: false,
+  },
+  {
+    id: "inv-mercedes-c-300",
+    brand: "Mercedes-Benz",
+    model: "C 300",
+    category: "Sedan",
+    condition: "Used Cars",
+    price: 43800,
+    monthlyPrice: "$489/mo",
+    year: 2023,
+    mileage: "15k mi",
+    fuel: "Petrol",
+    transmission: "Automatic RWD",
+    seats: 5,
+    badge: "Premium Trim",
+    image: mercedesCla,
+    trim: "Avantgarde line with panoramic roof",
+    inStock: true,
+  },
+  {
+    id: "inv-mercedes-eqa-250",
+    brand: "Mercedes-Benz",
+    model: "EQA 250",
+    category: "SUV",
+    condition: "New Cars",
+    price: 49900,
+    monthlyPrice: "$559/mo",
+    year: 2024,
+    mileage: "6 mi",
+    fuel: "Electric",
+    transmission: "Automatic FWD",
+    seats: 5,
+    badge: "Electric",
+    image: mercedesCla,
+    trim: "Progressive line EV launch edition",
+    inStock: true,
+  },
+];
+
+const dealerProfiles = {
+  Audi: {
+    name: "Audi Premium House",
+    address: "45 Amir Temur Avenue, Tashkent",
+    phone: "+998 90 445 11 22",
+    responseTime: "Replies within 20 minutes",
+  },
+  BMW: {
+    name: "Bavaria Selection Center",
+    address: "17 Yunusobod Street, Tashkent",
+    phone: "+998 90 212 77 44",
+    responseTime: "Replies within 15 minutes",
+  },
+  Ford: {
+    name: "Ford City Drive",
+    address: "106 Small Ring Road, Tashkent",
+    phone: "+998 90 338 90 00",
+    responseTime: "Replies within 30 minutes",
+  },
+  "Mercedes-Benz": {
+    name: "Signature Star Motors",
+    address: "8 Shota Rustaveli Street, Tashkent",
+    phone: "+998 90 556 18 88",
+    responseTime: "Replies within 10 minutes",
+  },
+  Peugeot: {
+    name: "French Auto Gallery",
+    address: "63 Chilonzor Avenue, Tashkent",
+    phone: "+998 90 120 33 66",
+    responseTime: "Replies within 25 minutes",
+  },
+  Porsche: {
+    name: "Porsche Sport Garage",
+    address: "9 Furqat Street, Tashkent",
+    phone: "+998 90 777 20 20",
+    responseTime: "Replies within 10 minutes",
+  },
+};
+
+const galleryByBrand = {
+  Audi: [audiQ7, audiSportback, audiQ7, audiSportback],
+  BMW: [bmw530i, bmw530i, bmw530i, bmw530i],
+  Ford: [fordEscape, fordEscape, fordEscape, fordEscape],
+  "Mercedes-Benz": [mercedesCla, mercedesCla, mercedesCla, mercedesCla],
+  Peugeot: [peugeot308, peugeot308, peugeot308, peugeot308],
+  Porsche: [porscheCayenne, porscheCayenne, porscheCayenne, porscheCayenne],
+};
+
+const brandFeatureMap = {
+  Audi: [
+    "Virtual cockpit with digital cluster",
+    "Adaptive cruise and lane assist",
+    "Panoramic roof with ambient lighting",
+    "Premium Bang & Olufsen audio",
+    "Wireless Apple CarPlay and Android Auto",
+    "Quattro confidence for every season",
+  ],
+  BMW: [
+    "M Sport styling package",
+    "Adaptive LED headlights",
+    "Heated seats with memory function",
+    "Gesture control infotainment",
+    "Parking assistant with 360 camera",
+    "Drive mode select with eco and sport",
+  ],
+  Ford: [
+    "Hands-free power tailgate",
+    "Co-Pilot360 driver assistance",
+    "Wireless phone charging pad",
+    "Dual-zone climate control",
+    "Blind-spot information system",
+    "Flexible rear cargo layout",
+  ],
+  "Mercedes-Benz": [
+    "MBUX digital cockpit",
+    "Active brake assist",
+    "Panoramic sliding sunroof",
+    "64-color ambient lighting",
+    "Wireless charging and premium audio",
+    "AMG line exterior styling",
+  ],
+  Peugeot: [
+    "i-Cockpit digital display",
+    "Massaging front seats",
+    "Adaptive cruise control",
+    "Fastback roofline styling",
+    "Full LED matrix headlamps",
+    "Wireless smartphone mirroring",
+  ],
+  Porsche: [
+    "Sport chrono package",
+    "Adaptive air suspension",
+    "Bose surround sound system",
+    "Matrix LED headlights",
+    "Porsche communication management",
+    "Launch control ready performance setup",
+  ],
+};
+
+const buildVin = (vehicle) =>
+  `${vehicle.brand.slice(0, 2).toUpperCase()}${vehicle.year}${vehicle.id
+    .replace(/[^a-z0-9]/gi, "")
+    .slice(0, 10)
+    .toUpperCase()}`;
+
+const formatPrice = (value) =>
+  new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    maximumFractionDigits: 0,
+  }).format(value);
+
+export const getInventoryVehicleById = (vehicleId) => {
+  const vehicle = inventoryListings.find((item) => item.id === vehicleId);
+
+  if (!vehicle) {
+    return null;
+  }
+
+  const dealer = dealerProfiles[vehicle.brand];
+  const features = brandFeatureMap[vehicle.brand];
+
+  return {
+    ...vehicle,
+    dealer,
+    gallery: galleryByBrand[vehicle.brand] ?? [vehicle.image, vehicle.image],
+    description: `${vehicle.brand} ${vehicle.model} brings a cleaner balance of price, mileage, and spec level. This listing is meant to feel dealer-grade: the important facts are surfaced first, the finance signal is clear, and the equipment list stays practical instead of decorative.`,
+    overview: [
+      { label: "Body", value: vehicle.category },
+      { label: "Mileage", value: vehicle.mileage },
+      { label: "Fuel Type", value: vehicle.fuel },
+      { label: "Year", value: String(vehicle.year) },
+      { label: "Transmission", value: vehicle.transmission },
+      { label: "Seats", value: `${vehicle.seats} seats` },
+      { label: "Condition", value: vehicle.condition.replace(" Cars", "") },
+      { label: "Availability", value: vehicle.inStock ? "In Stock" : "On Request" },
+      { label: "VIN", value: buildVin(vehicle) },
+    ],
+    features,
+    locationNote: `${dealer.address}. Viewing and test-drive appointments are available throughout the week.`,
+    financeNote: `Estimated ${vehicle.monthlyPrice} with approved credit and 20% down payment.`,
+    instantSavings: formatPrice(Math.round(vehicle.price * 0.12)),
+  };
+};
+
+export const getRelatedInventoryListings = (vehicleId, limit = 4) => {
+  const currentVehicle = inventoryListings.find((item) => item.id === vehicleId);
+
+  if (!currentVehicle) {
+    return [];
+  }
+
+  const sameBrand = inventoryListings.filter(
+    (item) => item.id !== vehicleId && item.brand === currentVehicle.brand
+  );
+  const sameCategory = inventoryListings.filter(
+    (item) =>
+      item.id !== vehicleId &&
+      item.category === currentVehicle.category &&
+      item.brand !== currentVehicle.brand
+  );
+
+  return [...sameBrand, ...sameCategory].slice(0, limit);
+};

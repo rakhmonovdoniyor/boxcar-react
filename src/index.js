@@ -4,12 +4,15 @@ import './index.css';
  
  
 import Router from './router';
+import { AppSessionProvider } from './components/auth/app-session';
 import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <Router />
+    <AppSessionProvider>
+      <Router />
+    </AppSessionProvider>
   </BrowserRouter>
 );
  
